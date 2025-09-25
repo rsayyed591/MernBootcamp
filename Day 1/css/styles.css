@@ -1,0 +1,114 @@
+/* Import Google Fonts – Urbanist for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ------------------------------ */
+/* BODY – Page Layout and Typography */
+/* ------------------------------ */
+body {
+    font-family: 'Urbanist', sans-serif; /* Clean, modern font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 20px; /* Spacing from edges */
+}
+
+/* ------------------------------ */
+/* HEADER – Page Title Section */
+/* ------------------------------ */
+header {
+    background-color: #007BFF; /* Accent background */
+    color: #ffffff; /* White text */
+    padding: 20px; /* Spacing inside header */
+    text-align: center; /* Center content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Depth effect */
+}
+
+/* ------------------------------ */
+/* HEADINGS – Title Hierarchy */
+/* ------------------------------ */
+h1 {
+    font-size: 2rem; /* Large, prominent title */
+    margin-bottom: 0.5em; /* Space below heading */
+}
+
+h2 {
+    color: #007BFF; /* Accent color for subheadings */
+    margin-bottom: 1em; /* Space below heading */
+}
+
+h3 {
+    color: #6c757d; /* Softer color for tertiary headings */
+    margin-bottom: 0.5em; /* Space below heading */
+}
+
+/* ------------------------------ */
+/* FORM – Input Section Styling */
+/* ------------------------------ */
+form {
+    background-color: #ffffff; /* White form background */
+    padding: 25px; /* Space inside form */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 400px; /* Responsive width */
+    margin: 20px auto; /* Center horizontally with space around */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+form:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* ------------------------------ */
+/* INPUT and BUTTON – Form Fields */
+/* ------------------------------ */
+input, button {
+    padding: 12px; /* Comfortable space inside fields */
+    margin-bottom: 15px; /* Space between fields */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Readable text size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effect */
+}
+
+/* INPUT – Focus State */
+input:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
+}
+
+/* BUTTON – Primary Action Styling */
+button {
+    background-color: #007BFF; /* Accent color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: 600; /* Bold text */
+}
+
+/* BUTTON – Hover State */
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 15px; /* Space above image */
+}
+/* ------------------------------ */
+/* FOOTER – Closing Section */
+/* ------------------------------ */
+footer {
+    text-align: center; /* Center text */
+    padding: 15px; /* Spacing */
+    color: #6c757d; /* Softer text */
+    font-size: 0.9rem; /* Smaller font size */
+}
