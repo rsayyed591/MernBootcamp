@@ -393,9 +393,18 @@ footer {
 
 ---
 
-## 🏋️ Practice
+## 🏋️ Some Task
 
 * Add a **required** attribute to inputs (e.g., `required` on email).
 * Create a **navbar** linking all pages.
 * Add a **cards grid** with images + titles + buttons.
 * Make a responsive **two-column layout** for the features section using CSS Grid.
+
+# 🏋️ Practice
+
+For practice, visit **W3Schools** and try the examples in the browser:
+
+* HTML: [https://www.w3schools.com/html/](https://www.w3schools.com/html/)
+* CSS: [https://www.w3schools.com/css/](https://www.w3schools.com/css/)
+
+> Tip: Use the **Try it Yourself** editor on each page to tweak code and see results instantly.

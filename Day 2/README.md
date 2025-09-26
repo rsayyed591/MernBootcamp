@@ -4,6 +4,64 @@ A compact guide + the exact examples we built together live.
 
 ---
 
+## 🧭 Session Outline (what we covered first)
+
+* **Why React?** speed, component reusability, great developer experience
+* **Real DOM vs Virtual DOM** (how React updates UI efficiently)
+* **Props vs State** (inputs vs local mutable data)
+* **Vite vs Create React App** (tooling + commands)
+* **Hooks** (especially `useState` and `useEffect`)
+* Hands-on: **props**, **state**, **useState**, **useEffect**, and **mapping JSON** in React
+
+---
+
+## 🌟 Why React?
+
+* **Reusable components** keep code modular and maintainable.
+* **Virtual DOM** batches and minimizes updates for speed.
+* **Hooks** bring state + lifecycle into simple function components.
+* **Ecosystem**: huge community, tooling, and learning resources.
+
+---
+
+## 🧠 Real DOM vs Virtual DOM (simple mental model)
+
+| Concept         | Real DOM                                          | Virtual DOM (React)                                                     |
+| --------------- | ------------------------------------------------- | ----------------------------------------------------------------------- |
+| What is it?     | The actual browser DOM tree                       | A **lightweight JS copy** of the DOM                                    |
+| Update behavior | Direct changes trigger layout/paint **each time** | React **diffs** (virtual vs previous) and **patches only what changed** |
+| Dev experience  | Manual updates: `document.getElementById`, etc.   | Declarative UI: “what the UI should look like” for a given state        |
+| Performance     | Can be costly with frequent updates               | **Efficient** updates via diff + batch                                  |
+
+---
+
+## 🧩 Components, Props & State (at a glance)
+
+* **Props** = inputs from parent → **read-only** in child.
+* **State** = local, owned by the component → **mutable** via `useState`.
+
+---
+
+## 🧩 Props vs State
+
+| Feature           | Props                     | State                                   |
+| ----------------- | ------------------------- | --------------------------------------- |
+| Ownership         | Passed **from parent**    | **Owned by the component**              |
+| Mutability        | Read-only inside child    | Mutable via `useState` (or reducers)    |
+| Trigger re-render | When parent changes props | When setter updates state               |
+| Analogy           | Function **arguments**    | Function **local variables** (reactive) |
+
+---
+
+## ⚡ Vite vs Create React App
+
+| Feature        | Create React App (CRA)        | **Vite**                        |
+| -------------- | ----------------------------- | ------------------------------- |
+| Bootstrapping  | `npx create-react-app my-app` | `npm create vite@latest my-app` |
+| Dev speed      | Heavier dev server            | **Ultra-fast dev server**       |
+| Config         | Zero-config, older stack      | Modern, lean, flexible          |
+| Recommendation | OK for beginners              | **Best default today** ✅        |
+
 ## 🚀 Quick Start (Vite)
 
 ```bash
@@ -32,31 +90,9 @@ Type `rfc` in a new `.jsx` file → hit **Enter** → you’ll get a ready-to-ed
 
 ---
 
-## 🌟 React — What/Why (quick)
-
-* **Library**, not a full framework.
-* UI is built from **components** (reusable, composable).
-* **Virtual DOM** updates only what changed → fast.
-* **Hooks** give state + lifecycle to function components.
-
-| Plain HTML/CSS/JS    | React                      |
-| -------------------- | -------------------------- |
-| Manual DOM updates   | Virtual DOM                |
-| Hard to reuse pieces | Reusable components        |
-| No built-in state    | `useState`, `useEffect`, … |
-
----
-
-## 🧩 Components, Props & State (at a glance)
-
-* **Props** = inputs from parent → **read-only** in child.
-* **State** = local, owned by the component → **mutable** via `useState`.
-
----
-
 # 🧪 Session Demos (exact code)
 
-Below are the **exact** examples you taught and showed.
+Below are the **exact** examples I taught and showed.
 
 > Create a `src/components` folder and place each component there.
 > The imports in `App.jsx` (at the end) match the names you used.
