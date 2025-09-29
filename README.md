@@ -1,9 +1,14 @@
-# 🧑‍🏫 MERN Bootcamp — Day 1 & Day 2
+# 🧑‍🏫 MERN Bootcamp — Day 1, Day 2 & Day 3
 
-This repo contains hands-on material from our first two sessions:
+Thanks for joining the MERN Bootcamp! 🎉
+To go deeper with React, check out The Net Ninja’s playlist:
+▶️ [https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
+
+This repo contains hands-on material from our first three sessions:
 
 * **Day 1:** HTML & CSS fundamentals (semantic HTML, forms, links, images, box model)
 * **Day 2:** React basics with Vite (components, props, `useState`, `useEffect`, mapping JSON)
+* **Day 3:** Router, Postman & HTTP, Git setup + commands, Vercel deploy
 
 ---
 
@@ -20,19 +25,38 @@ Mern Bootcamp/
 │   │   ├── paymate.html
 │   │   └── thankyou.html
 │   └── README.md
-└── Day 2/
-    ├── README.md
-    └── test/
-        ├── index.html
-        ├── package.json
-        ├── src/
-        │   ├── App.jsx
-        │   ├── components/
-        │   │   ├── Greetings.jsx
-        │   │   ├── Timer.jsx
-        │   │   └── UserCard.jsx
-        │   └── main.jsx
-        └── vite.config.js
+├── Day 2/
+│   ├── README.md
+│   └── test/
+│       ├── .gitignore
+│       ├── eslint.config.js
+│       ├── filename.txt
+│       ├── index.html
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── public/
+│       │   └── vite.svg
+│       ├── src/
+│       │   ├── App.css
+│       │   ├── App.jsx
+│       │   ├── assets/
+│       │   │   └── react.svg
+│       │   ├── components/
+│       │   │   ├── Greetings.jsx
+│       │   │   ├── Timer.jsx
+│       │   │   └── UserCard.jsx
+│       │   ├── index.css
+│       │   ├── main.jsx
+│       │   └── pages/
+│       │       └── Axios.jsx
+│       └── vite.config.js
+└── Day 3/
+    ├── README.md              # Day 3 main index
+    ├── router.md              # React Router notes
+    ├── postman.md             # Postman, HTTP methods & status codes, cURL
+    ├── git-install.md         # Install & set up Git + GitHub
+    ├── git-commands.md        # add/commit/push/branch/clone/pull/merge (+ rebase, stash)
+    └── vercel-deploy.md       # Vercel deploy + SPA rewrites + practice task
 ```
 
 ---
@@ -41,6 +65,13 @@ Mern Bootcamp/
 
 * 📘 **Day 1 Notes (HTML & CSS):** [Day 1/README.md](./Day%201/README.md)
 * ⚛️ **Day 2 Notes (React with Vite):** [Day 2/README.md](./Day%202/README.md)
+* 🗺️ **Day 3 Main (All Links):** [Day 3/README.md](./Day%203/README.md)
+
+  * 🧭 Router: [Day 3/router.md](./Day%203/router.md)
+  * 🧪 Postman & HTTP: [Day 3/postman.md](./Day%203/postman.md)
+  * 🌱 Install Git: [Day 3/git-install.md](./Day%203/git-install.md)
+  * 🔀 Git Commands: [Day 3/git-commands.md](./Day%203/git-commands.md)
+  * 🚀 Vercel Deploy: [Day 3/vercel-deploy.md](./Day%203/vercel-deploy.md)
 
 ---
 
@@ -48,16 +79,13 @@ Mern Bootcamp/
 
 ### Day 1 (HTML & CSS)
 
-1. Open the folder in VS Code.
-2. Use **Live Server** (or double-click the file):
+Open files directly or use VS Code **Live Server**:
 
-   * `Day 1/html/index.html`
-   * `Day 1/html/margin.html`
-   * `Day 1/html/thankyou.html`
+* `Day 1/html/index.html`
+* `Day 1/html/margin.html`
+* `Day 1/html/thankyou.html`
 
 > Styles are in `Day 1/css/styles.css`.
-
----
 
 ### Day 2 (React with Vite)
 
@@ -69,12 +97,15 @@ npm i
 npm run dev
 ```
 
-* Create a new Vite app (reference):
+Create a new Vite app (reference):
 
-  ```bash
-  npm create vite@latest
-  ```
-* **VS Code snippet:** type `rfc` to scaffold a React Function Component (if you use an extension like ES7+ React/Redux/React-Native snippets).
+```bash
+npm create vite@latest
+```
+
+**VS Code tip:** type `rfc` to scaffold a React Function Component (with ES7+ React/Redux snippets extension).
+
+> **Note:** Day 3 demos build on the Day 2 React app (code continues in `Day 2/test`). Day 3 adds **documentation** only.
 
 ---
 
@@ -83,7 +114,7 @@ npm run dev
 ### Day 1 Highlights
 
 * Semantic HTML (`header`, `section`, `footer`, lists, forms)
-* Clean CSS with **Urbanist** font, spacing, shadows, focus styles
+* Clean CSS with **Urbanist** font, spacing, shadows
 * Box Model (margin vs padding) — see `margin.html`
 * Links (`target="_blank"`, `download`), images, simple navigation
 
@@ -93,89 +124,42 @@ npm run dev
 * `useState` counter demo
 * `useEffect` timer demo
 * Mapping JSON to components (cards list)
-* Passing props: `Greeting name="..."`
+* Passing props: `Greetings name="..."`
+
+### Day 3 Highlights
+
+* **React Router**: `BrowserRouter`, `Routes`, `Route`, `Link`
+* **Postman**: HTTP methods & status codes, how to read responses, cURL generation
+* **Axios vs Fetch** and why we often choose Axios
+* **Axios with async/await + try/catch** (Random User API demo)
+* **Git**: install + setup, essential commands
+* **Vercel**: link GitHub, deploy, SPA rewrites, and why localhost is not shareable
 
 ---
 
-## ✨ Example Snippets (from Day 2)
+## 🧱 Frontend + Backend Repo Strategy
 
-**Props + State (Greeting):**
+Three ways to structure MERN projects:
 
-```jsx
-function Greeting({ name }) {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <p>Hello {name}, you clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click</button>
-    </div>
-  );
-}
+1. **Single Repo, Two Folders (Monorepo)**
+
+```
+my-project/
+  client/   # React
+  server/   # Node/Express
 ```
 
-**useState (Counter):**
+2. **Branches per Stack** — e.g., `main` (frontend) and `server` (backend)
+3. **Two Separate Repos** — `app-frontend` and `app-backend`
 
-```jsx
-function Counter() {
-  const [count, setCount] = useState(0);
-  return (
-    <div style={{ textAlign:"center", padding:20, border:"2px solid #007bff", borderRadius:8 }}>
-      <h2>🟢 useState Example</h2>
-      <p>Current Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
-      <button onClick={() => setCount(0)}>Reset</button>
-    </div>
-  );
-}
-```
-
-**useEffect (Timer):**
-
-```jsx
-function Timer() {
-  const [seconds, setSeconds] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setSeconds(s => s + 1), 1000);
-    return () => clearInterval(t);
-  }, []);
-  return (
-    <div style={{ textAlign:"center", padding:20, border:"2px solid #28a745", borderRadius:8 }}>
-      <h2>🔵 useEffect Example</h2>
-      <p>Timer: {seconds} seconds</p>
-    </div>
-  );
-}
-```
-
-**Map over JSON (UserCards):**
-
-```jsx
-function UserCards() {
-  const users = [
-    { id: 1, name: "Alice", role: "Frontend Developer" },
-    { id: 2, name: "Bob", role: "Backend Developer" },
-    { id: 3, name: "Charlie", role: "Full-Stack Developer" },
-  ];
-  return (
-    <div className="usercards-container">
-      {users.map(user => (
-        <div className="usercard" key={user.id}>
-          <h3>{user.name}</h3>
-          <p>{user.role}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-```
+> If you’re starting out solo, **two folders in one repo** is often the simplest.
 
 ---
 
 ## 👤 Author
 
 **Rehan Sayyed**
-GitHub: [@rehan591](https://github.com/rehan591)
+GitHub: [@rsayyed591](https://github.com/rsayyed591)
 
 ---
 
