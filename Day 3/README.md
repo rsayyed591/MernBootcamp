@@ -1,4 +1,4 @@
-# MERN Bootcamp — Main Notes & Links
+# MERN Bootcamp(Day 3)
 
 Thanks for joining the MERN Bootcamp! 🎉
 To go deeper with React, I highly recommend The Net Ninja’s playlist:
