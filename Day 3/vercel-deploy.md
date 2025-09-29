@@ -1,4 +1,4 @@
-# vercel-deploy.md — Deploying Your React App with Vercel
+# vercel-deploy.md
 
 **Goal:** Link GitHub ↔ Vercel, deploy to the internet, understand why `localhost` isn’t shareable, and practice by **forking & deploying** a repo.
 
