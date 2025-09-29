@@ -1,4 +1,4 @@
-# git-commands.md — Everyday Git Commands (Quick, Practical Guide)
+# git-commands.md
 
 **Scope today:** init → add → commit → branch → push/pull → clone → merge
 **Bonus (peek):** rebase & stash (brief)
