@@ -1,4 +1,4 @@
-# git-install.md — Install Git & Connect to GitHub (Beginner-Friendly)
+# git-install.md
 
 **Video walkthrough:** [https://youtu.be/AdzKzlp66sQ?si=DzEAN2jyOJh6XQko](https://youtu.be/AdzKzlp66sQ?si=DzEAN2jyOJh6XQko)
 
